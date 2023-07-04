@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 100px;
+}
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background: url(29.jpeg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner h2 {
+  font-size: 3em;
+  color: goldenrod;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+.banner h2 span {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.banner h3 {
+  font-size: 1.5em;
+  color: blue;
+  font-weight: 1000;
+}
+.button {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+header.sticky {
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 5px 20px rgba(0, 0, 0, 0.1);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+header.sticky logo {
+  color: black;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+header ul li a:hover {
+  background-color: lightgray;
+  padding: 1px;
+}
+header.sticky ul li a {
+  color: black;
+}
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+.heading h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.contentBX {
+  padding-right: 30px;
+}
+.contentBx h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.w50 {
+  min-width: 50%;
+}
+img {
+  max-width: 100%;
+}
+h4 {
+  text-align: left;
+}
+.services {
+  background-color: #111;
+}
+.heading.White {
+  color: white;
+}
+.services .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.services .content .servicesBX {
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.services .content .servicesBX:hover {
+  background: rgb(17, 17, 167);
+}
+.services .content .servicesBX img {
+  max-width: 220px;
+  filter: invert(1);
+}
+.services .content .servicesBX h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact {
+  background: black;
+}
+.formBx {
+  min-width: 60%;
+}
+.formBx form {
+  display: flex;
+  flex-direction: column;
+}
+.formBx form h3,
+.contactInfo h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  resize: none;
+}
+.formBx form textarea {
+  min-height: 200px;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder {
+  color: grey;
+}
+.formBx form input[type="submit"] {
+  max-width: 100px;
+  background: #2196f3;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contactInfo {
+  min-width: 40%;
+}
+.contactInfoBX {
+  position: relative;
+}
+.contactInfoBX .box {
+  position: relative;
+  padding: 20px o;
+  display: flex;
+}
+.contactInfoBX .box .icon {
+  min-width: 40px;
+  padding-top: 4px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 25px;
+}
+.contactInfoBX .box .text {
+  display: flex;
+  margin-left: 20px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.contactInfoBX .box .text h3 {
+  font-weight: 500;
+  color: #2196f3;
+  margin-bottom: 2px;
+}
+.copyright {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+  .menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: right;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid black;
+  }
+  .menu.active {
+    left: 0;
+  }
+  header ul li a {
+    color: black;
+    font-size: 25px;
+    margin: 10px;
+  }
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url(27.jpeg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  .toggle.active {
+    background: url(28.jpeg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  header.sticky .toggle {
+    filter: invert(1);
+  }
+  section {
+    padding: 100px 50px;
+  }
+  .banner {
+    padding: 150px 50px 100px;
+  }
+  .banner h2 {
+    font-size: 1.5em;
+  }
+  .banner h3 {
+    font-size: 1.5em;
+  }
+  .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  .heading h2 {
+    font-size: 24px;
+  }
+  .contentBX {
+    font-size: 20px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .w50 {
+    margin-bottom: 20px;
+  }
+  .services .content .servicesBX {
+    margin: 10px;
+  }
+  .contactInfo {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  header,
+  header.sticky {
+    padding: 20px 50px;
+  }
+  .banner {
+    padding: 150px 20px 100px;
+  }
+  section {
+    padding: 100px 20px;
+  }
+}
