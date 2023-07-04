@@ -325,6 +325,16 @@ h4 {
   .contactInfo {
     margin: 20px 0;
   }
+  .banner {
+  position: relative;
+  min-height: 100vh;
+  background: url(29.jpeg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 }
 
 @media (max-width: 600px) {
@@ -338,4 +348,14 @@ h4 {
   section {
     padding: 100px 20px;
   }
+  .banner {
+  position: relative;
+  min-height: 100vh;
+  background: url(29.jpeg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 }
