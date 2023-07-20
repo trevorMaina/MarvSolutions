@@ -1,0 +1,38 @@
+*{
+  padding: 0;
+  margin: 0;
+  background-color: blanchedalmond;
+}
+.content{
+ 
+  margin-left: 200px;
+  margin-top: 150px;
+  background-color: blanchedalmond;
+  display:inline-block;
+
+}
+.content p{
+  padding: 10px;
+}
+.content h1{
+  padding: 10px;
+}
+.content button{
+margin-left: 200px;
+border: none;
+background-color: goldenrod;
+padding: 15px;
+border-radius: 20px;
+cursor: pointer;
+color: aliceblue;
+margin-top: 10px;
+font-weight: bold;
+font-size: 14px;
+transition: box-shadow 0.15s;
+}
+.content button:hover{
+  opacity: 0.8;
+}
+.content button:active{
+  opacity: 0.5;
+}
