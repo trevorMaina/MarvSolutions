@@ -242,6 +242,13 @@ h4 {
   text-align: center;
   padding: 10px;
 }
+#preloader{
+  background:#010004 url(baf8c1fd42e68c83336c19652d2b5a32.gif) no-repeat center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 
 @media (max-width: 991px) {
   header,
